@@ -13,13 +13,14 @@ age-calculator-app/
 ├── Dockerfile
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 └── static/
-├── css/
-│ └── style.css
-└── js/
-└── script.js
+    ├── css/
+    │   └── style.css
+    └── js/
+        └── script.js
+
 
 
 - `app.py` — Main Flask app script  
