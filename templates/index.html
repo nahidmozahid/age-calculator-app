@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Enter your Date of Birth</h1>
+        <form method="POST" id="dobForm">
+            <input type="date" name="dob" required />
+            <button type="submit">Calculate Age</button>
+        </form>
+
+        {% if age is not none %}
+            <h2>Your Age: {{ age }}</h2>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
